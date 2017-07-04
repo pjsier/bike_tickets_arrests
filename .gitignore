@@ -1,0 +1,4 @@
+.DS_Store
+*.jar
+output/*.pdf
+output/*.csv
