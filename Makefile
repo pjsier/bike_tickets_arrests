@@ -1,4 +1,5 @@
 all: output/bike_arrests.csv output/bike_tickets.csv
+	python3 join_geocoding.py
 
 output/bike_arrests.csv: output/bike_arrests.pdf
 	java -jar tabula-java.jar -a 53.0,49.0,739.97,560.02 -p all -o output/bike_arrests_temp.csv output/bike_arrests.pdf && \
